@@ -39,7 +39,7 @@ function Transactions(props){
   function removeOne(id){
 
     let newList=list.filter((item)=>{
-      return item.id!=id
+      return item.id!==id
     })
 
     setList(newList)
