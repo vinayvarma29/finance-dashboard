@@ -23,14 +23,14 @@ function App(){
 
   let income=0
   list.forEach((item)=>{
-    if(item.type=="income"){
+    if(item.type==="income"){
       income=income+item.amount
     }
   })
 
   let expenses=0
   list.forEach((item)=>{
-    if(item.type=="expense"){
+    if(item.type==="expense"){
       expenses=expenses+item.amount
     }
   })

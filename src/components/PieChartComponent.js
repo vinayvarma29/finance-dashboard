@@ -7,7 +7,7 @@ function PieChartComponent(props){
   let mapData={}
 
   list.forEach((item)=>{
-    if(item.type=="expense"){
+    if(item.type==="expense"){
       if(mapData[item.category]){
         mapData[item.category]=mapData[item.category]+item.amount
       }else{

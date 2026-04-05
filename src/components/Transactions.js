@@ -66,7 +66,7 @@ function Transactions(props){
             <th>Category</th>
             <th>Amount</th>
             <th>Type</th>
-            {role=="admin" && <th>Action</th>}
+            {role==="admin" && <th>Action</th>}
           </tr>
         </thead>
 
@@ -78,11 +78,11 @@ function Transactions(props){
                 <td>{one.date}</td>
                 <td>{one.category}</td>
                 <td>₹{one.amount}</td>
-                <td className={one.type=="income"?"text-green-600":"text-red-500"}>
+                <td className={one.type==="income"?"text-green-600":"text-red-500"}>
                   {one.type}
                 </td>
 
-                {role=="admin" && (
+                {role==="admin" && (
                   <td>
                     <button
                       onClick={()=>removeOne(one.id)}
@@ -101,7 +101,7 @@ function Transactions(props){
 
       </table>
 
-      {role=="admin" && (
+      {role==="admin" && (
 
         <div className="mt-4 flex flex-wrap gap-2">
 

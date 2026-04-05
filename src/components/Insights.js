@@ -5,7 +5,7 @@ function Insights(props){
   let data={}
 
   list.forEach((item)=>{
-    if(item.type=="expense"){
+    if(item.type==="expense"){
       if(data[item.category]){
         data[item.category]=data[item.category]+item.amount
       }else{
